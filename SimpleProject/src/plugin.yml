@@ -1,0 +1,9 @@
+name: SimpleProject
+main: me.dionjava.simpleproject.Main
+version: 1.0.0
+author: DionJava
+description: a simple command
+
+commands:
+  simple:
+    description: simple command :D
