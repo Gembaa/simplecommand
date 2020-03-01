@@ -15,18 +15,15 @@ public class EventsClass implements Listener{
 	public void onPlayerJoin(PlayerJoinEvent e) {
 		Player p = e.getPlayer();
 		e.setJoinMessage("Hello," + p.getName());
+		
 	}
 	@EventHandler
 	public void onPlayerQuit(PlayerQuitEvent e) {
 		Player p = e.getPlayer();
 		e.setQuitMessage("Bye Bye," + p.getName());
-	}
-	@EventHandler
-	public void onDropItem(PlayerDropItemEvent e) {
-		if (Material.ANVIL != null);
-		e.setCancelled(false);
 		
 	}
+	
     @SuppressWarnings("unused")
     @SubscribeEvent
     public void onBreakEvent(BlockEvent.BreakEvent event) {
@@ -43,6 +40,7 @@ public class EventsClass implements Listener{
         }
         else return;
         event.world.createExplosion(event.getPlayer(), event.x, event.y, event.z, 2.0F, true);
+	    
     }    
   
 }
